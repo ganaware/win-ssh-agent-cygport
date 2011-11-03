@@ -1,0 +1,20 @@
+DESCRIPTION="A ssh-agent wrapper with simple GUI"
+HOMEPAGE="https://github.com/ganaware/win-ssh-agent"
+SRC_URI="https://github.com/downloads/ganaware/win-ssh-agent/${P}.tgz"
+SRC_DIR="win-ssh-agent"
+
+src_compile() {
+	cd ${B}
+	lndirs
+	cygmake
+}
+
+src_test() {
+	:
+}
+
+src_install() {
+	cd ${B}
+	dobin win-ssh-agent win-ssh-askpass
+	dodoc README-ja.txt
+}

@@ -1,0 +1,16 @@
+category: Utils
+requires: openssh cygwin
+sdesc: "A ssh-agent wrapper with simple GUI"
+ldesc: "With the win-ssh-agent, we can use the ssh-agent (available in
+the cygwin openssh) in the more smart way.
+
+Normally, we need to start all relevant programs, which might
+need to use the ssh, as child processes of the shell
+(e.g. bash) in which you eval'ed the ssh-agent.  Because, the
+programs must be able to refer to environment variables that
+set by the ssh-agent.
+
+The win-ssh-agent enables all programs to refer to the
+environment variables of the ssh-agent, i.e. the
+SSH_AUTH_SOCK.  Now, we no longer need to start programs as
+child processes of the shell."
