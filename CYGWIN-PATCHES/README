@@ -1,5 +1,54 @@
-=============
-win-ssh-agent
-=============
+win-ssh-askpass
+-------------------------------------------------------------------------------
+A ssh-agent wrapper with simple GUI.
 
+Runtime requirements:
+  cygwin	1.7.9-1
+  openssh	5.8p1-1
 
+Build requirements:
+  binutils	2.22.51-1
+  coreutils	8.14-1
+  cygport	0.10.6-1
+  gcc4-g++	4.5.3-3
+  make		3.81-2
+  w32api	3.17-2
+
+Canonical homepage:
+  https://github.com/ganaware/win-ssh-agent
+
+Canonical download:
+  https://github.com/downloads/ganaware/win-ssh-agent/win-ssh-agent-1.07.tgz
+
+License:
+  BSD
+
+Language:
+  C++
+
+----------------------------------------
+
+Build instructions:
+  tar xvjf win-ssh-agent-1.07-1.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically.
+  cd /usr/src
+  cygport win-ssh-agent-1.07-1.cygport all
+
+This will create:
+  /usr/src/win-ssh-agent-1.07-1.tar.bz2
+  /usr/src/win-ssh-agent-1.07-1-src.tar.bz2
+
+Or use 'cygport win-ssh-agent-1.07-1 prep' to get a patched source directory.
+
+To find out the files included in the binary distribution, you can
+use "cygcheck -l win-ssh-agent", or browse the listing for the appropriate
+version at <http://cygwin.com/packages/>.
+
+----------------------------------------
+
+Port Notes:
+
+1.07-1
+----------
+* Initial cygwin release.
